@@ -5,13 +5,13 @@
   "main": "lib/",
   "repository": {
     "type": "git",
-    "url": "git://github.com/codeine-cd/codeine_node_utils.get"
+    "url": "git://github.com/codeine-cd/codeine_node_utils.git"
   },
   "engines": {
     "node": ">=0.10.3"
   },
   "author": "ezraroi@gmail.com",
-  "license": "Intel",
+  "license": "MIT",
   "dependencies": {
     "q": "^1.1.2",
     "request": "^2.48.0"
