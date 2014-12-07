@@ -1,5 +1,5 @@
 {
-  "name": "codeine_node_utils",
+  "name": "codeineNodeUtils",
   "version": "0.0.1",
   "description": "NodeJs package with some of codeine API methods",
   "main": "lib/",
