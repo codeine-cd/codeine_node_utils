@@ -1,0 +1,19 @@
+{
+  "name": "codeine_node_utils",
+  "version": "0.0.1",
+  "description": "NodeJs package with some of codeine API methods",
+  "main": "lib/",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/codeine-cd/codeine_node_utils.get"
+  },
+  "engines": {
+    "node": ">=0.10.3"
+  },
+  "author": "ezraroi@gmail.com",
+  "license": "Intel",
+  "dependencies": {
+    "q": "^1.1.2",
+    "request": "^2.48.0"
+  }
+}
