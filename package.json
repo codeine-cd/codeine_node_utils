@@ -1,14 +1,13 @@
 {
   "name": "codeine_node_utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "NodeJs package with some of codeine API methods",
-  "main": "lib/",
+  "main": "lib/index.js",
   "directories": {
     "test": "test"
   },
   "dependencies": {
     "q": "^1.1.2",
-    "underscore": "^1.7.0",
     "request": "^2.49.0"
   },
   "devDependencies": {},
