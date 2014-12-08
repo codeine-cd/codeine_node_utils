@@ -1,19 +1,28 @@
 {
-  "name": "codeineNodeUtils",
-  "version": "0.0.1",
+  "name": "codeine_node_utils",
+  "version": "1.0.0",
   "description": "NodeJs package with some of codeine API methods",
   "main": "lib/",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "q": "^1.1.2",
+    "underscore": "^1.7.0",
+    "request": "^2.49.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/codeine-cd/codeine_node_utils.git"
   },
-  "engines": {
-    "node": ">=0.10.3"
-  },
   "author": "ezraroi@gmail.com",
-  "license": "MIT",
-  "dependencies": {
-    "q": "^1.1.2",
-    "request": "^2.48.0"
-  }
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codeine-cd/codeine_node_utils/issues"
+  },
+  "homepage": "https://github.com/codeine-cd/codeine_node_utils"
 }
