@@ -1,16 +1,35 @@
 var codeine = require('./../lib');
+var fs = require('fs');
 
-var client = new codeine('codeine.intel.com',12347,'772c9736-b3d7-485e-97f3-adffc99d7569');
+var client = new codeine('codeine.intel.com',12347,'');
 
 // client.getProjectNodes('Compute_Process_Monitor').then(function(data) {
 //    console.dir(data);
 // });
 
-var commandObject = {
-   command_info : {
-      project_name : 'Compute_Process_Monitor',
-      name : 'list processes'
-   },
-   should_execute_on_all_nodes : true
-};
-client.runCommand('Compute_Process_Monitor', commandObject);
+// var commandObject = {
+//    command_info : {
+//       project_name : 'Compute_Process_Monitor',
+//       name : 'list processes'
+//    },
+//    should_execute_on_all_nodes : true
+// };
+// client.runCommand('Compute_Process_Monitor', commandObject);
+
+var out = fs.createWriteStream('out.txt');
+
+
+client.getCommandStatus('Compute_Process_Monitor', 11)
+    .on('error', function(err) {
+        console.error('getCommandStatus() - Error on server', err);
+        deferred.reject(err);
+    })
+    .on('response', function(response) {
+        if (response.statusCode === 200) {
+
+        }
+        else {
+            console.error('getCommandStatus() - Status Code =  ' + response.statusCode);
+        }
+    })
+    .pipe(out);
