@@ -1,7 +1,7 @@
 var codeine = require('./../lib');
 var fs = require('fs');
 
-var client = new codeine('codeine.intel.com',12347,'');
+var client = new codeine('codeine.intel.com',12377,'');
 
 // client.getProjectNodes('Compute_Process_Monitor').then(function(data) {
 //    console.dir(data);
@@ -19,10 +19,9 @@ var client = new codeine('codeine.intel.com',12347,'');
 var out = fs.createWriteStream('out.txt');
 
 
-client.getCommandStatus('Compute_Process_Monitor', 11)
+client.getCommandStatus('Compute_Process_Monitor', 1, false)
     .on('error', function(err) {
         console.error('getCommandStatus() - Error on server', err);
-        deferred.reject(err);
     })
     .on('response', function(response) {
         if (response.statusCode === 200) {
