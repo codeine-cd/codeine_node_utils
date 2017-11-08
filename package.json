@@ -7,8 +7,10 @@
     "test": "test"
   },
   "dependencies": {
+    "busywait": "^1.0.10",
     "q": "^1.1.2",
-    "request": "^2.49.0"
+    "request": "^2.49.0",
+    "underscore": "^1.8.3"
   },
   "devDependencies": {},
   "scripts": {
@@ -18,7 +20,10 @@
     "type": "git",
     "url": "https://github.com/codeine-cd/codeine_node_utils.git"
   },
-  "author": { "name" : "Roi ezra", "email" : "ezraroi@gmail.com"},
+  "author": {
+    "name": "Roi ezra",
+    "email": "ezraroi@gmail.com"
+  },
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/codeine-cd/codeine_node_utils/issues"
