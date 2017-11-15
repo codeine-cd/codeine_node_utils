@@ -1,6 +1,6 @@
 {
   "name": "codeine_node_utils",
-  "version": "0.0.15",
+  "version": "0.0.16",
   "description": "NodeJs package with some of codeine API methods",
   "main": "lib/index.js",
   "directories": {
